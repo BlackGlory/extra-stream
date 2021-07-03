@@ -1,7 +1,7 @@
-import { isObject } from '@blackglory/types'
+import { isRecord, isBoolean, isFunction } from '@blackglory/types'
 
 export function isNodeJSWritableStream(val: any): val is NodeJS.WritableStream {
-  return isObject(val)
-      && typeof val.writable === 'boolean'
-      && typeof val.write === 'function'
+  return isRecord(val)
+      && isBoolean(val.writable)
+      && isFunction(val.write)
 }

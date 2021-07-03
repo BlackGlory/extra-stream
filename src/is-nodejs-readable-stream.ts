@@ -1,8 +1,8 @@
-import { isObject } from '@blackglory/types'
+import { isRecord, isBoolean, isFunction } from '@blackglory/types'
 
 export function isNodeJSReadableStream(val: any): val is NodeJS.ReadableStream {
-  return isObject(val)
-      && typeof val.readable === 'boolean'
-      && typeof val.read === 'function'
-      && typeof val.pipe === 'function'
+  return isRecord(val)
+      && isBoolean(val.readable)
+      && isFunction(val.read)
+      && isFunction(val.pipe)
 }
