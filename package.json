@@ -56,6 +56,6 @@
     "@types/node": "^14.14.31"
   },
   "dependencies": {
-    "@blackglory/types": "^0.6.0"
+    "@blackglory/types": "^0.6.1"
   }
 }
