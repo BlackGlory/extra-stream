@@ -56,6 +56,6 @@
     "@types/node": ">=14"
   },
   "dependencies": {
-    "@blackglory/types": "^0.6.3"
+    "@blackglory/types": "^0.6.4"
   }
 }
