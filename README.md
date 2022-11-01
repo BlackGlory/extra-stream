@@ -8,13 +8,13 @@ npm install --save extra-stream
 yarn add extra-stream
 ```
 
-### API
-#### isNodeJSReadableStream
+## API
+### isNodeJSReadableStream
 ```ts
 function isNodeJSReadableStream(val: any): val is NodeJS.ReadableStream
 ```
 
-#### isNodeJSWritableStream
+### isNodeJSWritableStream
 ```ts
 function isNodeJSWritableStream(val: any): val is NodeJS.WritableStream
 ```
