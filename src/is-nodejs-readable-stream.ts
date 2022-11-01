@@ -6,3 +6,9 @@ export function isNodeJSReadableStream(val: any): val is NodeJS.ReadableStream {
       && isFunction(val.read)
       && isFunction(val.pipe)
 }
+
+export function isntNodeJSReadableStream<T>(
+  val: T
+): val is Exclude<T, NodeJS.ReadableStream> {
+  return !isNodeJSReadableStream(val)
+}
