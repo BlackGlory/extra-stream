@@ -2,23 +2,19 @@ import { isNodeJSWritableStream } from '@src/is-nodejs-writable-stream.js'
 import { Readable, Writable } from 'stream'
 
 describe('isNodeJSWritableStream', () => {
-  describe('val is NodeJS.WritableStream', () => {
-    it('return true', () => {
-      const stream = new Writable()
+  test('val is NodeJS.WritableStream', () => {
+    const stream = new Writable()
 
-      const result = isNodeJSWritableStream(stream)
+    const result = isNodeJSWritableStream(stream)
 
-      expect(result).toBe(true)
-    })
+    expect(result).toBe(true)
   })
 
-  describe('val is not NodeJS.WritableStream', () => {
-    it('return false', () => {
-      const stream = new Readable()
+  test('val is not NodeJS.WritableStream', () => {
+    const stream = new Readable()
 
-      const result = isNodeJSWritableStream(stream)
+    const result = isNodeJSWritableStream(stream)
 
-      expect(result).toBe(false)
-    })
+    expect(result).toBe(false)
   })
 })
