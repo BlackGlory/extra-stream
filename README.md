@@ -19,13 +19,6 @@ function toReadableStream<T>(
 ): ReadableStream<T>
 ```
 
-### toReadableByteStream
-```ts
-function toReadableByteStream(
-  iterable: Iterable<ArrayBufferView> | AsyncIterable<ArrayBufferView>
-): ReadableStream<Uint8Array>
-```
-
 ### toAsyncIterableIterator
 ```ts
 function toAsyncIterableIterator<T>(stream: ReadableStream<T>): AsyncIterableIterator<T>
