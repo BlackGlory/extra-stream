@@ -26,7 +26,11 @@ export function toReadableByteStream(
       if (done) {
         controller.close()
       } else {
-        controller.enqueue(new Uint8Array(value.buffer))
+        if (controller.byobRequest) {
+          controller.byobRequest.view
+        } else {
+          controller.enqueue(new Uint8Array(value.buffer))
+        }
       }
     }
   , async cancel(reason: unknown): Promise<void> {
