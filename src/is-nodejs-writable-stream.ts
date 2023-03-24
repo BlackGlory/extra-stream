@@ -1,4 +1,4 @@
-import { isObject, isBoolean, isFunction } from '@blackglory/types'
+import { isObject, isBoolean, isFunction } from 'extra-utils'
 
 export function isNodeJSWritableStream(val: any): val is NodeJS.WritableStream {
   return isObject(val)

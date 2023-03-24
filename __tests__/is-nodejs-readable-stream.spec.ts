@@ -1,4 +1,4 @@
-import { isNodeJSReadableStream } from '@src/is-nodejs-readable-stream'
+import { isNodeJSReadableStream } from '@src/is-nodejs-readable-stream.js'
 import { Readable, Writable } from 'stream'
 
 describe('isNodeJSReadableStream', () => {
