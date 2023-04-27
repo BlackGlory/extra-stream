@@ -9,8 +9,8 @@ yarn add extra-stream
 ```
 
 ## API
-### ReadableStream, WritableStream, TransformStream
-The WHATWG `ReadableStream`, `WritableStream` and `TransformStream`.
+### ReadableStream, WritableStream, TransformStream, TextDecoderStream, TextEncoderStream
+The WHATWG `ReadableStream`, `WritableStream`, `TransformStream`, `TextDecoderStream`, `TextEncoderStream`.
 
 ### toReadableStream
 ```ts

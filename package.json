@@ -12,10 +12,12 @@
   "browser": {
     "./lib/readable-stream.js": "./lib/readable-stream.browser.js",
     "./lib/writable-stream.js": "./lib/writable-stream.browser.js",
-    "./lib/transform-stream.js": "./lib/transform-stream.browser.js"
+    "./lib/transform-stream.js": "./lib/transform-stream.browser.js",
+    "./lib/text-decoder-stream.js": "./lib/text-decoder-stream.browser.js",
+    "./lib/text-encoder-stream.js": "./lib/text-encoder-stream.browser.js"
   },
   "engines": {
-    "node": ">=16.5"
+    "node": ">=16.6"
   },
   "sideEffects": false,
   "repository": "git@github.com:BlackGlory/extra-stream.git",
