@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/BlackGlory/extra-stream/compare/v0.2.0...v0.3.0) (2023-04-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* The minimal version of Node.js is v16.6
+
+### Features
+
+* export `TextDecoderStream`, `TextEncoderStream` ([e7a6747](https://github.com/BlackGlory/extra-stream/commit/e7a6747523eccf0854fe5abc8cee80f29fee049b))
+
 ## [0.2.0](https://github.com/BlackGlory/extra-stream/compare/v0.1.6...v0.2.0) (2023-03-24)
 
 
