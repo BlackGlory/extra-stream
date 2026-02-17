@@ -1,4 +1,4 @@
-import { go } from '@blackglory/go'
+import { go } from '@blackglory/prelude'
 
 export function toAsyncIterableIterator<T>(
   stream: ReadableStream<T>

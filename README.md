@@ -29,10 +29,10 @@ but many runtimes don't support this yet.
 
 ### isNodeJSReadableStream
 ```ts
-function isNodeJSReadableStream(val: any): val is NodeJS.ReadableStream
+function isNodeJSReadableStream(val: unknown): val is NodeJS.ReadableStream
 ```
 
 ### isNodeJSWritableStream
 ```ts
-function isNodeJSWritableStream(val: any): val is NodeJS.WritableStream
+function isNodeJSWritableStream(val: unknown): val is NodeJS.WritableStream
 ```

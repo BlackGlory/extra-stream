@@ -1,6 +1,6 @@
-import { isObject, isBoolean, isFunction } from 'extra-utils'
+import { isObject, isBoolean, isFunction } from '@blackglory/prelude'
 
-export function isNodeJSReadableStream(val: any): val is NodeJS.ReadableStream {
+export function isNodeJSReadableStream(val: unknown): val is NodeJS.ReadableStream {
   return isObject(val)
       && isBoolean(val.readable)
       && isFunction(val.read)

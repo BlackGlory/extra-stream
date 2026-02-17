@@ -8,10 +8,8 @@ export function toReadableStream<T>(
   return new ReadableStream<T>({
     start(controller: ReadableStreamDefaultController) {
       if (Symbol.asyncIterator in iterable) {
-        // @ts-ignore
         iterator = iterable[Symbol.asyncIterator]()
       } else if (Symbol.iterator in iterable) {
-        // @ts-ignore
         iterator = iterable[Symbol.iterator]()
       }
     }

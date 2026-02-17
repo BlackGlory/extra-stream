@@ -1,5 +1,6 @@
+import { describe, test, expect } from 'vitest'
 import { toAsyncIterableIterator } from '@src/to-async-iterable-iterator.js'
-import { go } from '@blackglory/go'
+import { go } from '@blackglory/prelude'
 import { toReadableStream } from '@src/to-readable-stream.js'
 import { toArrayAsync } from 'iterable-operator'
 import { getErrorPromise } from 'return-style'

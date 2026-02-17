@@ -1,3 +1,4 @@
+import { describe, test, expect } from 'vitest'
 import { isNodeJSWritableStream } from '@src/is-nodejs-writable-stream.js'
 import { Readable, Writable } from 'stream'
 
